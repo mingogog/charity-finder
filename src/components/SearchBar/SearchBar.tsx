@@ -8,7 +8,7 @@ interface SearchBarProps{
 const SearchBar: React.FC<SearchBarProps> = ({searchText, onChange}:SearchBarProps)=>{
     return(
         <SearchBarContainer>
-            <form>
+            <form onSubmit={(e)=>{e.preventDefault();}}>
                 <div>
                     <SearchIcon className="icon-search"/>
                     <input onChange={(e)=>onChange(e.target.value)} value={searchText} className="input-search" type="text" placeholder="Search Charity ..."/>
