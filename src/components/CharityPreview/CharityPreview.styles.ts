@@ -28,7 +28,6 @@ export const CharityPreviewContainer = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        font-family: 'Handjet', cursive;
     }
     .preview-icon{
         height: 48px !important;

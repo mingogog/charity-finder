@@ -21,7 +21,6 @@ export const HeartFillIcon = styled(HeartFill)`
 export const ProfileCardContainer = styled.div`
     padding: 1em 10em 3em;
     margin-top:3em;
-    font-family: 'Handjet', cursive;
     
     .profile-title{
         font-size: 2rem;

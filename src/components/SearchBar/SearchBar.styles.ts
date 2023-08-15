@@ -3,6 +3,7 @@ import {Search} from '@styled-icons/octicons'
 
 export const SearchBarContainer = styled.div`
     padding: 1em 10em;
+    color: #526D82;
     .input-search{
         border-bottom: 2px solid #526D82;
         width:100%;
@@ -10,7 +11,6 @@ export const SearchBarContainer = styled.div`
         border-radius: 0;
         outline: unset;
         font-size: 1.5em;
-        font-family: 'Handjet', cursive;
     }
     .input-search::placeholder {
         color: #D8D9DA;

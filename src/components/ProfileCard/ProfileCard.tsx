@@ -26,6 +26,12 @@ const ProfileCard: React.FC<ProfileCardProfile> = ({charityProfile}:ProfileCardP
     const handleBackOnClick = ()=>{
         navigate('/')
     }
+    const handleFavClick = () => {
+        if(isFav){
+            // localStorage.setItem()
+        }
+        setIsFav((prev)=>!prev)
+    }
     return (
         <ProfileCardContainer>
             <div onClick={handleBackOnClick} className="-translate-y-10 cursor-pointer text-sky-950 hover:text-sky-700 text-lg">
@@ -34,7 +40,7 @@ const ProfileCard: React.FC<ProfileCardProfile> = ({charityProfile}:ProfileCardP
             <div className="flex items-center">
                 {logoUrl && <img className="profile-logo inline-block" src={logoUrl}></img>}
                 <div className="profile-title inline-block ml-5">{name}</div>
-                <div className="ml-auto" onClick={()=>{setIsFav((prev)=>!prev)}}>
+                <div className="ml-auto" onClick={()=>{handleFavClick()}}>
                     {isFav && <HeartFillIcon />}
                     {!isFav && <HeartIcon />}
                 </div>
